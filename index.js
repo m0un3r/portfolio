@@ -1,12 +1,33 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
-import * as serviceWorker from "./serviceWorker";
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('body,html').animate({
+      scrollTop: $(hash).offset().top
+      }, 1200, function(){
+      window.location.hash = hash;
+     });
+     } 
+    });
+});
 
-ReactDOM.render(<App />, document.getElementById("root"));
+var width = $(window).width(); 
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+window.onscroll = function(){
+if ((width >= 900)){
+    if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        $("#middle").css("background-size","150% auto");
+    }else{
+        $("#middle").css("background-size","100% auto");        
+    }
+}
+};
+
+setTimeout(function(){
+    $("#loading").addClass("animated fadeOut");
+    setTimeout(function(){
+      $("#loading").removeClass("animated fadeOut");
+      $("#loading").css("display","none");
+    },800);
+},1450);
