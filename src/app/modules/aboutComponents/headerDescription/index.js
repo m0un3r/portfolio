@@ -32,7 +32,7 @@ const HeaderDescription = ({
         (props => (
           <Div style={props} className={styles.user_description_container}>
             <div className={styles.user_description}>
-              Hi, <br />I am <b className={styles.name}>Riyaz Ahmed</b>, A
+              Hi, <br />I am <b className={styles.name}>RAMLI MOUNIR</b>, A
               Software Developer with 4+ years of Software Development
               experience on various Platforms, Passionate to build Polished,
               Innovative and well-detailed Apps with Fluid Animations to

@@ -18,19 +18,20 @@ const ContactComponent = ({ className, isWhite, hideResume }) => {
       align
       className={`${styles.social_container} ${className}`}
     >
-      <a className={styles.icon_link} target="_blank" href="https://github.com/riyaz942">
+      <a className={styles.icon_link} target="_blank" href="https://github.com/m0un3r">
         <img
           src={isWhite ? iconGithubWhite : iconGithub}
           className={styles.icon}
         />
       </a>
-      <a className={styles.icon_link} target="_blank" href="https://www.linkedin.com/in/riyaz942/">
+      <a className={styles.icon_link} target="_blank" href="https://www.linkedin.com">
         <img
           src={isWhite ? iconLinkedInWhite : iconLinkedIn}
           className={styles.icon}
         />
+        
       </a>
-      <a className={styles.icon_link} target="_blank" href="mailto:ahmed.riyaz94@gmail.com">
+      <a className={styles.icon_link} target="_blank" href="mailto:miinu112@gmail.com">
         <img
           src={isWhite ? iconEmailWhite : iconEmail}
           className={styles.icon}
